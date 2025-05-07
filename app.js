@@ -1,2 +1,2 @@
-console.log(10==="10");
-console.log(10="10gir");
+// console.log(10==="10");
+console.log(10=="10");
