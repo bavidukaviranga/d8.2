@@ -8,20 +8,20 @@ let customerList =[
     },
     {
         id:1,
-        name:"saman",
-        email:"saman@gmail.com"
+        name:"kamal",
+        email:"kamal@gmail.com"
     },
     {
         id:1,
-        name:"saman",
-        email:"saman@gmail.com"
+        name:"nimal",
+        email:"nimal@gmail.com"
 
     },
     {
         {
         id:1,
-        name:"saman",
-        email:"saman@gmail.com"
+        name:"sunimal",
+        email:"sunimal@gmail.com"
 
     },
     }
