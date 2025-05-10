@@ -42,19 +42,27 @@ let tblCustomer = document.getElementById("tblCustomer");
 
 /////////////////////////////
 
-////////////////////
 ////for each with function/////
 
+let body=
+    `<tr>
+        <th>iD</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>`
+
 customerList.forEach(customer=>{
-   tblCustomer.innerHTML+=`
+   body +=`
     <tr>
-        <th>${customer.id}</th>
-        <th>${customer.name}</th>
-        <th>${customer.email}</th>
-     </tr>` 
+        <td>${customer.id}</td>
+        <td>${customer.name}</td>
+        <td>${customer.email}</td>
+    </tr>
+` 
 })
 
-/////////////////////////
 
 
+
+tblCustomer.innerHTML=body;
 console.log(tblCustomer);
