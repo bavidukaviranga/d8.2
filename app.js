@@ -30,16 +30,31 @@ let tblCustomer = document.getElementById("tblCustomer");
 
 ///////////function clear//////////////////
 
-let loop=(customer)=>{
+// let loop=(customer)=>{
+//    tblCustomer.innerHTML+=`
+//     <tr>
+//         <th>iD</th>
+//         <th>Name</th>
+//         <th>Email</th>
+//      </tr>` 
+// }
+// customerList.forEach(loop)
+
+/////////////////////////////
+
+////////////////////
+////for each with function/////
+
+customerList.forEach(customer=>{
    tblCustomer.innerHTML+=`
     <tr>
         <th>iD</th>
         <th>Name</th>
         <th>Email</th>
      </tr>` 
-}
-customerList.forEach(loop)
+})
 
-/////////////////////////////
+/////////////////////////
+
 
 console.log(tblCustomer);
