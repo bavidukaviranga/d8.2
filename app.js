@@ -26,7 +26,6 @@ let customerList =[
     },
     
 ]
-let tblCustomer = document.getElementById("tblCustomer");
 
 ///////////function clear//////////////////
 
@@ -44,7 +43,29 @@ let tblCustomer = document.getElementById("tblCustomer");
 
 ////for each with function/////
 
-let body=
+// console.log(tblCustomer);
+
+
+function addCustomer(){
+    let customerId = document.getElementById("txtId").value;
+    let customerName = document.getElementById("txtName").value;
+    let customerEmail = document.getElementById("txtEmail").value;
+    // console.log("ID :"+id);
+    // console.log("Name :"+name);
+    // console.log("Email :"+email);
+    customerList.push({
+            id : customerId,
+            name : customerName,
+            email : customerEmail
+    });
+
+    loadTable();
+
+    
+}
+function loadTable(){
+    let tblCustomer = document.getElementById("tblCustomer");
+    let body=
     `<tr>
         <th>iD</th>
         <th>Name</th>
@@ -62,7 +83,8 @@ customerList.forEach(customer=>{
 })
 
 
-
-
 tblCustomer.innerHTML=body;
-console.log(tblCustomer);
+
+
+
+}
