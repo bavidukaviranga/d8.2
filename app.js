@@ -48,9 +48,9 @@ let tblCustomer = document.getElementById("tblCustomer");
 customerList.forEach(customer=>{
    tblCustomer.innerHTML+=`
     <tr>
-        <th>iD</th>
-        <th>Name</th>
-        <th>Email</th>
+        <th>${customer.id}</th>
+        <th>${customer.name}</th>
+        <th>${customer.email}</th>
      </tr>` 
 })
 
